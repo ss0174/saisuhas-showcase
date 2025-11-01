@@ -10,35 +10,30 @@ const Certifications = () => {
       issuer: "Microsoft (Coursera)",
       icon: "📊",
       color: "from-blue-500 to-cyan-500",
-      link: "#",
     },
     {
       name: "Alteryx Designer Core Certificate",
       issuer: "Alteryx",
       icon: "🔧",
       color: "from-purple-500 to-pink-500",
-      link: "#",
     },
     {
       name: "Full Stack Development (Python)",
       issuer: "Academix Edu",
       icon: "💻",
       color: "from-green-500 to-emerald-500",
-      link: "#",
     },
     {
       name: "Salesforce AI Associate",
       issuer: "Salesforce",
       icon: "🤖",
       color: "from-orange-500 to-red-500",
-      link: "#",
     },
     {
       name: "Oracle Cloud Infrastructure Foundations",
       issuer: "Oracle",
       icon: "☁️",
       color: "from-red-600 to-orange-500",
-      link: "#",
     },
   ];
 
@@ -77,17 +72,6 @@ const Certifications = () => {
                     </Badge>
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="pt-0">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
-                    onClick={() => window.open(cert.link, "_blank")}
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Certificate
-                  </Button>
-                </CardContent>
               </Card>
             ))}
           </div>
@@ -104,23 +88,29 @@ const Certifications = () => {
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button
                     variant="outline"
-                    onClick={() => window.open("https://github.com/saisuhas", "_blank")}
+                    onClick={() => window.open("https://github.com/saisuhas432005", "_blank")}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     GitHub
                   </Button>
                   <Button
                     variant="outline"
-                    onClick={() => window.open("https://linkedin.com/in/saisuhas", "_blank")}
+                    onClick={() => window.open("https://www.linkedin.com/in/saisuhassangaraju/", "_blank")}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     LinkedIn
                   </Button>
-                  <Button variant="outline">
+                  <Button 
+                    variant="outline"
+                    onClick={() => window.open("https://www.hackerrank.com/profile/ss0174", "_blank")}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     HackerRank
                   </Button>
-                  <Button variant="outline">
+                  <Button 
+                    variant="outline"
+                    onClick={() => window.open("https://leetcode.com/u/saisuhassangaraju/", "_blank")}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     LeetCode
                   </Button>
